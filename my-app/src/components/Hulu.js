@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-function Hulu() {
+import { NavLink } from 'react-router-dom'
+function Hulu(props) {
     return (
         <div>
             <h1>Hulu</h1>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
         </div>
     )
 }

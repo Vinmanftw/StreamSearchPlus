@@ -1,21 +1,22 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-
+import {NavLink} from 'react-router-dom'
 
 function Home(props) {
     return (
         <div>
             <h1>Home</h1>
-            <Link to="./Netflix">Netflix</Link>
-            <Link to="./Hulu">Hulu</Link>            
-            <Link to="./Prime">Amazon Prime Video</Link>
-            <Link to="./Peacock">Peacock</Link>
-            <Link to="./Paramount">Paramount+</Link>
-            <Link to="./Disney">Disney+</Link>
-            <Link to="./AppleTV">AppleTV</Link>
-            <Link to="./Starz">Starz</Link>
-            <Link to="./Showtime">Showtime</Link>
-            <Link to="./HBOMax">HBO Max</Link>
+            <nav>
+                
+                <NavLink to="./Netflix">Netflix</NavLink><br/>
+                <NavLink to="./Hulu">Hulu</NavLink><br/>            
+                <NavLink to="./Prime">Amazon Prime Video</NavLink><br/>
+                <NavLink to="./Peacock">Peacock</NavLink><br/>
+                <NavLink to="./Paramount+">Paramount+</NavLink><br/>
+                <NavLink to="./AppleTV+">AppleTV</NavLink><br/>
+                <NavLink to="./Starz">Starz</NavLink><br/>
+                <NavLink to="./Showtime">Showtime</NavLink><br/>
+                <NavLink to="./HBOMax">HBO Max</NavLink><br/>
+            </nav>
         </div>
     )
 }

@@ -1,13 +1,13 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
-function netflix(props) {
+function Netflix() {
     return (
         <div>
             <h1>Netflix</h1>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
         </div>
     )
 }
 
-export default netflix;
+export default Netflix;

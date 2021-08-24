@@ -1,7 +1,8 @@
-import React from "react";
+import React,{useState} from "react";
 
 
 import Home from "./Home";
+import NavBar from "./NavBar";
 import Netflix from "./Netflix"
 import Hulu from "./Hulu";
 import Disney from "./Disney"
@@ -17,10 +18,10 @@ import { Switch, Route } from "react-router-dom"
 
 
 function App() {
-
+  const [page, setPage] = useState("/")
   return (
     <div>
-      
+      <NavBar onChangePage={setPage} />
       <Switch>
         <Route path="/Netflix">
           <Netflix />
