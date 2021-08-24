@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 function Showtime() {
     return (
-        <div>
+        <div >
             <h1>Showtime</h1>
             <NavLink to="/">Home</NavLink>
         </div>
