@@ -14,7 +14,9 @@ export function ResultCard({ result }) {
           href={`https://www.imdb.com/title/${result.imdbID}/`}
           target="_blank"
           rel="noreferrer"
-        ></a>
+        >
+          imdbID
+        </a>
       </div>
     </div>
   );

@@ -19,6 +19,9 @@ export function ProviderSearch({ label, provider }) {
             keyword={keyword}
           >
             {({ results }) => {
+              if (results.length === 0) {
+                return <p>No results found</p>;
+              }
               return (
                 <div>
                   {results.map((result) => {
