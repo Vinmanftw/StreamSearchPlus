@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <nav>
-      <NavLink exact to="/">
+      <NavLink exact to="/" className="home-link">
         StreamSearch +
       </NavLink>
       <nav className="NavBar-NavLinks">
@@ -77,6 +77,14 @@ function NavBar() {
             <img
               src="https://play-lh.googleusercontent.com/GmIOtlRHzTffK3WSyNrz4NNrWFh_yUuhQb9UHXztk0ZxeeFzAUD52b9YVTGh7nsdJ8c"
               alt="HBOMAX"
+            />
+          </button>
+        </NavLink>
+        <NavLink to="./Disney +">
+          <button id="disney">
+            <img
+              src="https://www.justwatch.com/images/icon/147638351/s100"
+              alt="Disney +"
             />
           </button>
         </NavLink>
