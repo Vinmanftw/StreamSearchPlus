@@ -3,7 +3,6 @@ import React from "react";
 export function ResultCard({ result }) {
   return (
     <div id="movieDiv">
-      {result.title}
       <div className="card">
         <h4>{result.title}</h4>
         <img

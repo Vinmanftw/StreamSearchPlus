@@ -25,7 +25,7 @@ export function ResultsFetcher({ provider, type, pg, keyword, children }) {
         console.log(res.results);
         setResults(res.results);
       });
-  }, []);
+  }, [provider, type, pg, keyword]);
 
   return <React.Fragment>{children({ results })}</React.Fragment>;
 }
