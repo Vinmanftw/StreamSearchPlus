@@ -4,36 +4,81 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <nav>
+      <NavLink exact to="/">
+        StreamSearch +
+      </NavLink>
       <nav className="NavBar-NavLinks">
-        <NavLink exact to="/">
-          <button id="home">Home</button>
-        </NavLink>
         <NavLink to="./Netflix">
-          <button id="netflix">Netflix</button>
+          <button id="netflix">
+            <img
+              src="https://www.justwatch.com/images/icon/207360008/s100"
+              alt="Netflix"
+            />
+          </button>
         </NavLink>
         <NavLink to="./Hulu">
-          <button id="hulu">Hulu</button>
+          <button id="hulu">
+            <img
+              src="https://www.justwatch.com/images/icon/116305230/s100"
+              alt="Hulu"
+            />
+          </button>
         </NavLink>
         <NavLink to="./Prime">
-          <button id="prime">Prime</button>
+          <button id="prime">
+            <img
+              src="https://www.justwatch.com/images/icon/52449539/s100"
+              alt="Prime Video"
+            />
+          </button>
         </NavLink>
         <NavLink to="./Peacock">
-          <button id="peacock">Peacock</button>
+          <button id="peacock">
+            <img
+              src="https://images.justwatch.com/icon/194173870/s100"
+              alt="Peacock"
+            />
+          </button>
         </NavLink>
         <NavLink to="./Paramount+">
-          <button id="paramount">Paramount+</button>
+          <button id="paramount">
+            <img
+              src="https://images.justwatch.com/icon/242706661/s100"
+              alt="Paramount +"
+            />
+          </button>
         </NavLink>
         <NavLink to="./AppleTV+">
-          <button id="appleTV">AppleTV</button>
+          <button id="appleTV">
+            <img
+              src="https://www.justwatch.com/images/icon/152862153/s100"
+              alt="Apple TV+"
+            />
+          </button>
         </NavLink>
         <NavLink to="./Starz">
-          <button id="starz">Starz</button>
+          <button id="starz">
+            <img
+              src="https://images.justwatch.com/icon/902247/s100"
+              alt="Starz"
+            />
+          </button>
         </NavLink>
         <NavLink to="./Showtime">
-          <button id="showtime">Showtime</button>
+          <button id="showtime">
+            <img
+              src="https://images.justwatch.com/icon/677041/s100"
+              alt="Showtime"
+            />
+          </button>
         </NavLink>
         <NavLink to="./HBOMax">
-          <button id="hbomax">HBO Max</button>
+          <button id="hbomax">
+            <img
+              src="https://play-lh.googleusercontent.com/GmIOtlRHzTffK3WSyNrz4NNrWFh_yUuhQb9UHXztk0ZxeeFzAUD52b9YVTGh7nsdJ8c"
+              alt="HBOMAX"
+            />
+          </button>
         </NavLink>
       </nav>
     </nav>
