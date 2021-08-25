@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <nav>
       <NavLink exact to="/" className="home-link">
-        StreamSearch +
+        StreamSearch+
       </NavLink>
       <nav className="NavBar-NavLinks">
         <NavLink to="./Netflix">
