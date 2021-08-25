@@ -1,12 +1,8 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { ProviderSearch } from "./ProviderSearch";
+
 function AppleTV() {
-    return (
-        <div>
-            <h1>Apple TV+</h1>
-            <NavLink to="/">Home</NavLink>
-        </div>
-    )
+  return <ProviderSearch label={"AppleTV"} provider={"apple"} />;
 }
 
-export default AppleTV
+export default AppleTV;

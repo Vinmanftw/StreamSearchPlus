@@ -1,13 +1,8 @@
-import React from 'react'
-import {NavLink} from 'react-router-dom'
+import React from "react";
+import { ProviderSearch } from "./ProviderSearch";
 
 function Netflix() {
-    return (
-        <div>
-            <h1>Netflix</h1>
-            <NavLink to="/">Home</NavLink>
-        </div>
-    )
+  return <ProviderSearch label={"Netflix"} provider={"netflix"} />;
 }
 
 export default Netflix;

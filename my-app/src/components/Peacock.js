@@ -1,12 +1,8 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { ProviderSearch } from "./ProviderSearch";
+
 function Peacock() {
-    return (
-        <div>
-            <h1>Peacock</h1>
-            <NavLink to="/">Home</NavLink>
-        </div>
-    )
+  return <ProviderSearch label={"Peacock"} provider={"peacock"} />;
 }
 
-export default Peacock
+export default Peacock;

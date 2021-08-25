@@ -1,12 +1,8 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { ProviderSearch } from "./ProviderSearch";
+
 function Paramount() {
-    return (
-        <div>
-            <h1>Paramount+</h1>
-            <NavLink to="/">Home</NavLink>
-        </div>
-    )
+  return <ProviderSearch label={"Paramount"} provider={"paramount"} />;
 }
 
-export default Paramount
+export default Paramount;

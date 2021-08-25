@@ -1,12 +1,8 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { ProviderSearch } from "./ProviderSearch";
+
 function HBOMax() {
-    return (
-        <div>
-            <h1>HBO Max</h1>
-            <NavLink to="/">Home</NavLink>
-        </div>
-    )
+  return <ProviderSearch label={"HBOMax"} provider={"hbo"} />;
 }
 
-export default HBOMax
+export default HBOMax;

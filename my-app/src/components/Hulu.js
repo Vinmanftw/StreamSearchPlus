@@ -1,13 +1,8 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-function Hulu(props) {
-    return (
-        <div>
-            <h1>Hulu</h1>
-            <NavLink to="/">Home</NavLink>
-        </div>
-    )
+import React from "react";
+import { ProviderSearch } from "./ProviderSearch";
+
+function Hulu() {
+  return <ProviderSearch label={"Hulu"} provider={"hulu"} />;
 }
 
-export default Hulu
-
+export default Hulu;

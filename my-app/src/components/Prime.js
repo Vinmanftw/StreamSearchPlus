@@ -1,12 +1,8 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { ProviderSearch } from "./ProviderSearch";
+
 function Prime() {
-    return (
-        <div>
-            <h1>Prime</h1>
-            <NavLink to="/">Home</NavLink>
-        </div>
-    )
+  return <ProviderSearch label={"Prime"} provider={"prime"} />;
 }
 
-export default Prime
+export default Prime;

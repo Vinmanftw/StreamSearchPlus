@@ -1,12 +1,8 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { ProviderSearch } from "./ProviderSearch";
+
 function Showtime() {
-    return (
-        <div >
-            <h1>Showtime</h1>
-            <NavLink to="/">Home</NavLink>
-        </div>
-    )
+  return <ProviderSearch label={"Showtime"} provider={"showtime"} />;
 }
 
-export default Showtime
+export default Showtime;
