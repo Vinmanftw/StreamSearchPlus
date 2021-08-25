@@ -80,11 +80,11 @@ function NavBar() {
             />
           </button>
         </NavLink>
-        <NavLink to="./Disney +">
+        <NavLink to="./Disney+">
           <button id="disney">
             <img
               src="https://www.justwatch.com/images/icon/147638351/s100"
-              alt="Disney +"
+              alt="Disney+"
             />
           </button>
         </NavLink>
