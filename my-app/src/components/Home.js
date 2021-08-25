@@ -18,6 +18,10 @@ function Home(props) {
           <button id="prime">Prime Video</button>
         </NavLink>
         <br />
+        <NavLink to="./Disney+">
+          <button id="disney">Disney+</button>
+        </NavLink>
+        <br />
         <NavLink to="./Peacock">
           <button id="peacock">Peacock</button>
         </NavLink>
