@@ -5,7 +5,7 @@ export function Controls({ children }) {
   const [page, setPage] = useState(1);
   const [keyword, setKeyword] = useState("");
   function handleType() {
-    type === "movie" ? setType("series") : setType("movie");
+    type === "movie" ? setType("Series") : setType("Movie");
     setPage(1);
   }
 
@@ -15,8 +15,8 @@ export function Controls({ children }) {
         <button id="typebutton" onClick={handleType}>
           {type}
         </button>
-        <button id="beginning" onClick={() => setPage(1)}>
-          Beginning
+        <button id="start" onClick={() => setPage(1)}>
+          Start
         </button>
         <button
           id="back"

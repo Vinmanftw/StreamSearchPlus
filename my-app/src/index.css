@@ -20,7 +20,7 @@ Nav.NavBar-NavLinks {
 .NavBar-NavLinks button {
   margin-right: 10px;
   margin-top: 20px;
-  padding: 0;
+  padding: 20px;
   background: transparent;
   border: none;
 }
@@ -42,4 +42,78 @@ Nav.NavBar-NavLinks {
   color: black;
   margin-top: 30px;
   padding-left: 15px;
+}
+#next {
+  display: block;
+  width: 10%;
+  border: none;
+  background-color: #1e90ff;
+  padding-bottom: 14px 28px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #dce1e4;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 50px;
+
+  border-radius: 25px;
+  float: right;
+}
+
+#back {
+  display: block;
+  width: 10%;
+  border: none;
+  background-color: #1e90ff;
+  padding-bottom: 14px 28px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #dce1e4;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 25px;
+  float: left;
+  margin-bottom: 50px;
+}
+
+#typebutton {
+  display: block;
+  width: 10%;
+  border: none;
+  background-color: #1e90ff;
+  padding-bottom: 14px 28px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #dce1e4;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 25px;
+  float: left;
+  margin-bottom: 50px;
+}
+
+#start {
+  display: block;
+  width: 10%;
+  border: none;
+  background-color: #1e90ff;
+  padding-bottom: 14px 28px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #dce1e4;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 25px;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.card {
+  text-align: center;
+  border: #1e90ff solid 2px;
+  padding: 1rem;
+  width: 15rem;
+  height: 28rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
 }
