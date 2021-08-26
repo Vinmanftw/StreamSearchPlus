@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export function Controls({ children , buttonColor, btnText}) {
+export function Controls({ children, buttonColor, btnText }) {
   const [type, setType] = useState("movie");
   const [page, setPage] = useState(1);
   const [keyword, setKeyword] = useState("");
@@ -12,14 +12,15 @@ export function Controls({ children , buttonColor, btnText}) {
   return (
     <React.Fragment>
       <div className="Buttons">
-        <button style={{backgroundColor: buttonColor, color: btnText}} onClick={handleType}>
-          {type}
-        </button>
-        <button style={{backgroundColor: buttonColor, color: btnText}} id="start" onClick={() => setPage(1)}>
+        <button
+          style={{ backgroundColor: buttonColor, color: btnText }}
+          id="start"
+          onClick={() => setPage(1)}
+        >
           Start
         </button>
         <button
-          style={{backgroundColor: buttonColor, color: btnText}} 
+          style={{ backgroundColor: buttonColor, color: btnText }}
           id="back"
           onClick={() => {
             if (page === 1) {
@@ -30,12 +31,23 @@ export function Controls({ children , buttonColor, btnText}) {
         >
           Back
         </button>
-        <button style={{backgroundColor: buttonColor, color: btnText}}  id="next" onClick={() => setPage(page + 1)}>
+        <button
+          style={{ backgroundColor: buttonColor, color: btnText }}
+          id="next"
+          onClick={() => setPage(page + 1)}
+        >
           Next
         </button>
-        <p>Page: {page}</p>
+        <p id="page">Page: {page}</p>
       </div>
-      <div>
+      <div id="toggle">
+        <button
+          id="typebutton"
+          style={{ backgroundColor: buttonColor, color: btnText }}
+          onClick={handleType}
+        >
+          {type.charAt(0).toUpperCase() + type.substring(1)}
+        </button>
         <input
           id="input"
           value={keyword}

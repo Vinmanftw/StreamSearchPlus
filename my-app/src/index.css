@@ -48,7 +48,6 @@ Nav.NavBar-NavLinks {
   display: block;
   width: 10%;
   border: none;
-  background-color: #1e90ff;
   padding-bottom: 14px 28px;
   font-size: 20px;
   font-family: sans-serif;
@@ -64,11 +63,9 @@ Nav.NavBar-NavLinks {
   display: block;
   width: 10%;
   border: none;
-  background-color: #1e90ff;
   padding-bottom: 14px 28px;
   font-size: 20px;
   font-family: sans-serif;
-  color: #dce1e4;
   cursor: pointer;
   text-align: center;
   border-radius: 25px;
@@ -77,30 +74,28 @@ Nav.NavBar-NavLinks {
 }
 
 #typebutton {
-  display: block;
   width: 10%;
   border: none;
-  background-color: #1e90ff;
-  padding-bottom: 14px 28px;
   font-size: 20px;
   font-family: sans-serif;
-  color: #dce1e4;
   cursor: pointer;
   text-align: center;
   border-radius: 25px;
-  float: left;
-  margin-bottom: 50px;
+  margin-top: -80px;
+  margin-bottom: 15px;
+  margin-right: 20%;
+  margin-left: 10%;
+  width: 5%;
+  text-align: center;
 }
 
 #start {
   display: block;
   width: 10%;
   border: none;
-  background-color: #1e90ff;
   padding-bottom: 14px 28px;
   font-size: 20px;
   font-family: sans-serif;
-  color: #dce1e4;
   cursor: pointer;
   text-align: center;
   border-radius: 25px;
@@ -139,7 +134,7 @@ Nav.NavBar-NavLinks {
   border: #36ca94 solid 4px;
 }
 .prime .card {
-  border: #232f3e solid 4px;
+  border: #c1c4c7 solid 4px;
 }
 .peacock .card {
   border: #fccc12 solid 4px;
@@ -165,4 +160,19 @@ Nav.NavBar-NavLinks {
 
 .label {
   text-align: center;
+}
+
+#input {
+  margin-right: 20%;
+  margin-left: 10%;
+  width: 15%;
+  text-align: center;
+  border-radius: 25px;
+}
+
+#page {
+  bottom: 20px;
+  position: relative;
+  width: 6%;
+  margin-left: 47%;
 }
