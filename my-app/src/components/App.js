@@ -15,15 +15,15 @@ import { Switch, Route, useLocation } from "react-router-dom";
 
 const routeToColorsMap = {
   "/Netflix": ["#111111", "red"],
-  "/Hulu": ["green", "white"],
+  "/Hulu": ["#1e2126", "#36ca94"],
   "/Prime": ["#0f171e", "#00a8e1"],
   "/Peacock": ["#111111", "#ffffff"],
-  "/Showtime": ["red", "white"],
-  "/Paramount+": ["blue", "white"],
-  "/Disney+": ["blue", "white"],
-  "/HBOMax": ["purple", "white"],
+  "/Showtime": ["#b10400", "white"],
+  "/Paramount+": ["#0037c5", "white"],
+  "/Disney+": ["#1a202c", "white"],
+  "/HBOMax": ["rgb(36 3 101)", "white"],
   "/AppleTV+": ["gray", "white"],
-  "/Starz": ["grey", "white"],
+  "/Starz": ["#121212", "white"],
 };
 function App() {
   const location = useLocation();

@@ -6,7 +6,7 @@ import { ResultsFetcher } from "./ResultsFetcher";
 
 export function ProviderSearch({ label, provider }) {
   return (
-    <div>
+    <div className="label">
       <h1>{label}</h1>
       <NavLink to="/">Home</NavLink>
 

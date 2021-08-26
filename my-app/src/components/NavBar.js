@@ -19,7 +19,7 @@ function NavBar() {
         <NavLink to="./Hulu">
           <button id="hulu">
             <img
-              src="https://www.justwatch.com/images/icon/116305230/s100"
+              src="https://play-lh.googleusercontent.com/4whGAVjZGrrlNxzheKAfBXrxggtyAb4euWLeQI8fDfVfdnFEZjE0DZTJ8DKoh64pqcIa"
               alt="Hulu"
             />
           </button>

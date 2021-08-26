@@ -3,7 +3,6 @@ import React from "react";
 export function ResultCard({ result, provider }) {
   return (
     <div className={`card ${result.streamingInfo.value}`}>
-      <h4>{result.title}</h4>
       <a
         href={`https://www.imdb.com/title/${result.imdbID}/`}
         target="_blank"
