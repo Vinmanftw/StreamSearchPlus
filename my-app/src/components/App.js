@@ -20,7 +20,7 @@ const routeToColorsMap = {
   "/Peacock": ["#111111", "#ffffff"],
   "/Showtime": ["#b10400", "white"],
   "/Paramount+": ["#0037c5", "white"],
-  "/Disney+": ["#1a202c", "white"],
+  "/Disney+": ["#1a202c", "#0063e5"],
   "/HBOMax": ["rgb(36 3 101)", "white"],
   "/AppleTV+": ["gray", "white"],
   "/Starz": ["#121212", "white"],
