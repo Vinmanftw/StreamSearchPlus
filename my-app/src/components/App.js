@@ -11,19 +11,32 @@ import Peacock from "./Peacock";
 import Showtime from "./Showtime";
 import Prime from "./Prime";
 import Starz from "./Starz";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 
+const routeToColorsMap = {
+  "/Netflix": ["#111111", "red"],
+  "/Hulu": ["green", "white"],
+  "/Prime": ["#0f171e", "#00a8e1"],
+  "/Peacock": ["#111111", "#ffffff"],
+  "/Showtime": ["red", "white"],
+  "/Paramount+": ["blue", "white"],
+  "/Disney+": ["blue", "white"],
+  "/HBOMax": ["purple", "white"],
+  "/AppleTV+": ["gray", "white"],
+  "/Starz": ["grey", "white"],
+};
 function App() {
-  const [page, setPage] = useState("/");
-  const [curBack, setCurBack] = useState("");
-  const [curText, setCurText] = useState("");
-  function handleOnClick(color, colour) {
-    setCurBack(color);
-    setCurText(colour);
+  const location = useLocation();
+  let backgroundColor = "#fff";
+  let textColor = "#000";
+  const colors = routeToColorsMap[location.pathname];
+  if (colors !== undefined) {
+    backgroundColor = colors[0];
+    textColor = colors[1];
   }
   return (
-    <div style={{ backgroundColor: curBack, color: curText }}>
-      <NavBar onChangePage={setPage} handleOnClick={handleOnClick} />
+    <div style={{ backgroundColor: backgroundColor, color: textColor }}>
+      <NavBar />
       <Switch>
         <Route path="/Netflix">
           <Netflix />

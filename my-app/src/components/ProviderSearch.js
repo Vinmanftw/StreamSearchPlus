@@ -23,7 +23,7 @@ export function ProviderSearch({ label, provider }) {
                 return <p>No results found</p>;
               }
               return (
-                <div>
+                <div className="movie-container">
                   {results.map((result) => {
                     return <ResultCard key={result.id} result={result} />;
                   })}

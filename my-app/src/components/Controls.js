@@ -5,12 +5,12 @@ export function Controls({ children }) {
   const [page, setPage] = useState(1);
   const [keyword, setKeyword] = useState("");
   function handleType() {
-    type === "movie" ? setType("Series") : setType("Movie");
+    type === "movie" ? setType("series") : setType("movie");
     setPage(1);
   }
 
   return (
-    <div>
+    <React.Fragment>
       <div className="Buttons">
         <button id="typebutton" onClick={handleType}>
           {type}
@@ -46,9 +46,8 @@ export function Controls({ children }) {
           }}
           placeholder="Search by Name/Keyword"
         />
-
-        {children({ keyword, page, type })}
       </div>
-    </div>
+      {children({ keyword, page, type })}
+    </React.Fragment>
   );
 }

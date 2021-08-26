@@ -108,16 +108,56 @@ Nav.NavBar-NavLinks {
   margin-bottom: 50px;
 }
 
-.card {
-  text-align: center;
-  border: #1e90ff solid 2px;
-  padding: 1rem;
-  width: 15rem;
-  height: 28rem;
-  display: inline-grid;
-  margin: 1rem 2rem;
+.movie-poster {
+  justify-self: center;
+  width: 100%;
 }
 
-body .netflix {
-  background-color: rgb(27, 27, 27);
+.movie-container {
+  /* display: flex;
+  margin: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+  /* text-align: center;
+  padding: 1rem;
+  width: 20%;
+  height: 28rem;
+  margin-bottom: 1rem; */
+}
+.netflix .card {
+  border: rgb(228, 7, 7) solid 2px;
+  color: whitesmoke;
+}
+.hulu .card {
+  border: #66aa33 solid 2px;
+}
+.prime .card {
+  border: #232f3e solid 2px;
+}
+.peacock .card {
+  border: #fccc12 solid 2px;
+}
+.paramount .card {
+  border: #1e90ff solid 2px;
+}
+.apple .card {
+  border: #1e90ff solid 2px;
+}
+.starz .card {
+  border: rgb(24, 23, 23) solid 2px;
+}
+.showtime .card {
+  border: #b10000 solid 2px;
+}
+.hbo .card {
+  border: #b535f6 solid 2px;
+}
+.disney .card {
+  border: #1e90ff solid 2px;
 }
