@@ -36,6 +36,7 @@ export function Controls({ children }) {
       </div>
       <div>
         <input
+          id="input"
           value={keyword}
           onChange={(e) => {
             const value = e.currentTarget.value;

@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(231, 238, 234);
+  background-color: rgb(236, 238, 237);
 }
 
 code {
@@ -116,4 +116,8 @@ Nav.NavBar-NavLinks {
   height: 28rem;
   display: inline-grid;
   margin: 1rem 2rem;
+}
+
+body .netflix {
+  background-color: rgb(27, 27, 27);
 }

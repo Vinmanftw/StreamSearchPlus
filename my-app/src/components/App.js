@@ -1,27 +1,29 @@
-import React,{useState} from "react";
-
-
+import React, { useState } from "react";
 import Home from "./Home";
 import NavBar from "./NavBar";
-import Netflix from "./Netflix"
+import Netflix from "./Netflix";
 import Hulu from "./Hulu";
-import Disney from "./Disney"
-import AppleTV from "./AppleTV"
-import HBOMax from "./HBOMax"
-import Paramount from "./Paramount"
-import Peacock from "./Peacock"
-import Showtime from "./Showtime"
-import Prime from "./Prime"
-import Starz from "./Starz"
-import { Switch, Route } from "react-router-dom"
-
-
+import Disney from "./Disney";
+import AppleTV from "./AppleTV";
+import HBOMax from "./HBOMax";
+import Paramount from "./Paramount";
+import Peacock from "./Peacock";
+import Showtime from "./Showtime";
+import Prime from "./Prime";
+import Starz from "./Starz";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
-  const [page, setPage] = useState("/")
+  const [page, setPage] = useState("/");
+  const [curBack, setCurBack] = useState("");
+  const [curText, setCurText] = useState("");
+  function handleOnClick(color, colour) {
+    setCurBack(color);
+    setCurText(colour);
+  }
   return (
-    <div>
-      <NavBar onChangePage={setPage} />
+    <div style={{ backgroundColor: curBack, color: curText }}>
+      <NavBar onChangePage={setPage} handleOnClick={handleOnClick} />
       <Switch>
         <Route path="/Netflix">
           <Netflix />
@@ -60,8 +62,6 @@ function App() {
         <Route path="/">
           <Home />
         </Route>
-        
-
       </Switch>
     </div>
   );
