@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export function Controls({ children }) {
+export function Controls({ children , buttonColor, btnText}) {
   const [type, setType] = useState("movie");
   const [page, setPage] = useState(1);
   const [keyword, setKeyword] = useState("");
@@ -12,13 +12,14 @@ export function Controls({ children }) {
   return (
     <React.Fragment>
       <div className="Buttons">
-        <button id="typebutton" onClick={handleType}>
+        <button style={{backgroundColor: buttonColor, color: btnText}} onClick={handleType}>
           {type}
         </button>
-        <button id="start" onClick={() => setPage(1)}>
+        <button style={{backgroundColor: buttonColor, color: btnText}} id="start" onClick={() => setPage(1)}>
           Start
         </button>
         <button
+          style={{backgroundColor: buttonColor, color: btnText}} 
           id="back"
           onClick={() => {
             if (page === 1) {
@@ -29,7 +30,7 @@ export function Controls({ children }) {
         >
           Back
         </button>
-        <button id="next" onClick={() => setPage(page + 1)}>
+        <button style={{backgroundColor: buttonColor, color: btnText}}  id="next" onClick={() => setPage(page + 1)}>
           Next
         </button>
         <p>Page: {page}</p>

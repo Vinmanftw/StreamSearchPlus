@@ -1,8 +1,8 @@
 import React from "react";
 
-export function ResultCard({ result, provider }) {
+export function ResultCard({ result }) {
   return (
-    <div className={`card ${result.streamingInfo.value}`}>
+    <div className={`card`}>
       <a
         href={`https://www.imdb.com/title/${result.imdbID}/`}
         target="_blank"

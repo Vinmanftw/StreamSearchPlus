@@ -1,8 +1,8 @@
 import React from "react";
 import { ProviderSearch } from "./ProviderSearch";
 
-function AppleTV() {
-  return <ProviderSearch label={"AppleTV+"} provider={"apple"} />;
+function AppleTV({buttonColor, btnText}) {
+  return <ProviderSearch label={"AppleTV+"} provider={"apple"} buttonColor={buttonColor} btnText={btnText} />;
 }
 
 export default AppleTV;

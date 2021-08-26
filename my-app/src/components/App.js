@@ -17,18 +17,18 @@ const routeToColorsMap = {
   "/Netflix": ["#111111", "red"],
   "/Hulu": ["#1e2126", "#36ca94"],
   "/Prime": ["#0f171e", "#00a8e1"],
-  "/Peacock": ["#111111", "#ffffff"],
+  "/Peacock": ["#111111", "#fccc12"],
   "/Showtime": ["#b10400", "white"],
   "/Paramount+": ["#0037c5", "white"],
   "/Disney+": ["#1a202c", "#0063e5"],
   "/HBOMax": ["rgb(36 3 101)", "white"],
-  "/AppleTV+": ["gray", "white"],
+  "/AppleTV+": ["#262628", "white"],
   "/Starz": ["#121212", "white"],
 };
 function App() {
   const location = useLocation();
-  let backgroundColor = "#fff";
-  let textColor = "#000";
+  let backgroundColor = "#111111";
+  let textColor = "red";
   const colors = routeToColorsMap[location.pathname];
   if (colors !== undefined) {
     backgroundColor = colors[0];
@@ -39,41 +39,41 @@ function App() {
       <NavBar />
       <Switch>
         <Route path="/Netflix">
-          <Netflix />
+          <Netflix buttonColor={textColor} btnText={backgroundColor} />
         </Route>
 
         <Route path="/Hulu">
-          <Hulu />
+          <Hulu buttonColor={textColor} btnText={backgroundColor}/>
         </Route>
         <Route path="/AppleTV+">
-          <AppleTV />
+          <AppleTV buttonColor={textColor} btnText={backgroundColor}/>
         </Route>
 
         <Route path="/Paramount+">
-          <Paramount />
+          <Paramount buttonColor={textColor} btnText={backgroundColor}/>
         </Route>
         <Route path="/Peacock">
-          <Peacock />
+          <Peacock buttonColor={textColor} btnText={backgroundColor}/>
         </Route>
 
         <Route path="/Prime">
-          <Prime />
+          <Prime buttonColor={textColor} btnText={backgroundColor}/>
         </Route>
         <Route path="/Showtime">
-          <Showtime />
+          <Showtime buttonColor={textColor} btnText={backgroundColor}/>
         </Route>
 
         <Route path="/Starz">
-          <Starz />
+          <Starz buttonColor={textColor} btnText={backgroundColor}/>
         </Route>
         <Route path="/Disney+">
-          <Disney />
+          <Disney buttonColor={textColor} btnText={backgroundColor}/>
         </Route>
         <Route path="/HBOMax">
-          <HBOMax />
+          <HBOMax buttonColor={textColor} btnText={backgroundColor}/>
         </Route>
         <Route path="/">
-          <Home />
+          <Netflix buttonColor={textColor} btnText={backgroundColor} />
         </Route>
       </Switch>
     </div>

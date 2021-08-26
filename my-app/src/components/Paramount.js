@@ -1,8 +1,8 @@
 import React from "react";
 import { ProviderSearch } from "./ProviderSearch";
 
-function Paramount() {
-  return <ProviderSearch label={"Paramount+"} provider={"paramount"} />;
+function Paramount({buttonColor , btnText}) {
+  return <ProviderSearch label={"Paramount+"} provider={"paramount"} buttonColor={buttonColor} btnText={btnText}/>;
 }
 
 export default Paramount;

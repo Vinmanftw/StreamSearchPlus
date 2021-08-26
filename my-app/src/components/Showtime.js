@@ -1,8 +1,8 @@
 import React from "react";
 import { ProviderSearch } from "./ProviderSearch";
 
-function Showtime() {
-  return <ProviderSearch label={"Showtime"} provider={"showtime"} />;
+function Showtime({buttonColor , btnText}) {
+  return <ProviderSearch label={"Showtime"} provider={"showtime"} buttonColor={buttonColor} btnText={btnText}/>;
 }
 
 export default Showtime;

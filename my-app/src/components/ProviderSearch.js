@@ -1,16 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Controls } from "./Controls";
 import { ResultCard } from "./ResultCard";
 import { ResultsFetcher } from "./ResultsFetcher";
 
-export function ProviderSearch({ label, provider }) {
+export function ProviderSearch({ label, provider, buttonColor, btnText}) {
   return (
     <div className="label">
       <h1>{label}</h1>
-      <NavLink to="/">Home</NavLink>
+      
 
-      <Controls>
+      <Controls buttonColor={buttonColor} btnText={btnText}>
         {({ page, keyword, type }) => (
           <ResultsFetcher
             provider={provider}
