@@ -114,13 +114,11 @@ Nav.NavBar-NavLinks {
 }
 
 .movie-container {
-  /* display: flex;
-  margin: 2rem;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin: 2rem;
 }
 
 .card {
@@ -144,7 +142,7 @@ Nav.NavBar-NavLinks {
   border: #fccc12 solid 2px;
 }
 .paramount .card {
-  border: #1e90ff solid 2px;
+  border: #dbdee0 solid 2px;
 }
 .apple .card {
   border: #1e90ff solid 2px;
@@ -153,7 +151,7 @@ Nav.NavBar-NavLinks {
   border: rgb(24, 23, 23) solid 2px;
 }
 .showtime .card {
-  border: #b10000 solid 2px;
+  border: #fff solid 2px;
 }
 .hbo .card {
   border: #b535f6 solid 2px;
