@@ -9,7 +9,7 @@ const FETCH_OPTIONS = {
 };
 
 function url({ provider, type, pg, keyword }) {
-  const baseURL = `https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=${provider}&type=${type}&genre=18&page=${pg}&language=en`;
+  const baseURL = `https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=${provider}&type=${type}&page=${pg}&language=en`;
   if (keyword === "") {
     return baseURL;
   }

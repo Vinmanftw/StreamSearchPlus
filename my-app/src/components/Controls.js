@@ -14,13 +14,6 @@ export function Controls({ children, buttonColor, btnText }) {
       <div className="Buttons">
         <button
           style={{ backgroundColor: buttonColor, color: btnText }}
-          id="start"
-          onClick={() => setPage(1)}
-        >
-          Start
-        </button>
-        <button
-          style={{ backgroundColor: buttonColor, color: btnText }}
           id="back"
           onClick={() => {
             if (page === 1) {
@@ -61,6 +54,27 @@ export function Controls({ children, buttonColor, btnText }) {
         />
       </div>
       {children({ keyword, page, type })}
+      <div className="Buttons Buttons-bottom">
+        <button
+          style={{ backgroundColor: buttonColor, color: btnText }}
+          id="back"
+          onClick={() => {
+            if (page === 1) {
+              return;
+            }
+            setPage(page - 1);
+          }}
+        >
+          Back
+        </button>
+        <button
+          style={{ backgroundColor: buttonColor, color: btnText }}
+          id="next"
+          onClick={() => setPage(page + 1)}
+        >
+          Next
+        </button>
+      </div>
     </React.Fragment>
   );
 }
