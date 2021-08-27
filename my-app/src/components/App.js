@@ -37,9 +37,9 @@ function App() {
     <div style={{ backgroundColor: backgroundColor, color: textColor }}>
       <NavBar />
       <Switch>
-        <Route path="/netflix">
+        {/* <Route path="/netflix">
           <Netflix buttonColor={textColor} btnText={backgroundColor} />
-        </Route>
+        </Route> */}
 
         <Route path="/Hulu">
           <Hulu buttonColor={textColor} btnText={backgroundColor}/>
