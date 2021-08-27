@@ -23,7 +23,6 @@ export function ResultsFetcher({ provider, type, pg, keyword, children }) {
     fetch(url({ provider, type, pg, keyword }), FETCH_OPTIONS)
       .then((res) => res.json())
       .then((res) => {
-        console.log(res.results);
         setResults(res.results);
         setTotalPages(res.total_pages);
       });

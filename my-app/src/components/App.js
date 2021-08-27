@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Home from "./Home";
+
 import NavBar from "./NavBar";
 import Netflix from "./Netflix";
 import Hulu from "./Hulu";
@@ -38,9 +37,9 @@ function App() {
     <div style={{ backgroundColor: backgroundColor, color: textColor }}>
       <NavBar />
       <Switch>
-        <Route path="/Netflix">
+        {/* <Route path="/netflix">
           <Netflix buttonColor={textColor} btnText={backgroundColor} />
-        </Route>
+        </Route> */}
 
         <Route path="/Hulu">
           <Hulu buttonColor={textColor} btnText={backgroundColor}/>
