@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Home from "./Home";
+
 import NavBar from "./NavBar";
 import Netflix from "./Netflix";
 import Hulu from "./Hulu";
