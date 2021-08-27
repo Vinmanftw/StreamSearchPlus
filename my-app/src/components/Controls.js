@@ -60,7 +60,7 @@ export function Controls({
             setKeyword(value);
             setPage(1);
           }}
-          placeholder="Search by Name/Keyword"
+          placeholder={`Search for ${type} by Name/Keyword`}
         />
       </div>
       {children}
