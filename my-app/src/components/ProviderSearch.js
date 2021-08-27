@@ -36,7 +36,7 @@ export function ProviderSearch({ label, provider, buttonColor, btnText }) {
               setKeyword={setKeyword}
             >
               <div className="movie-container">
-                {results.length === 0 && <p>No results found</p>}
+                {results.length === 0 && <pn id="noResults">No results found</pn>}
                 {results.map((result) => {
                   return <ResultCard key={result.id} result={result} />;
                 })}

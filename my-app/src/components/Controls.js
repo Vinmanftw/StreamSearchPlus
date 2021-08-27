@@ -50,14 +50,13 @@ export function Controls({
           style={{ backgroundColor: buttonColor, color: btnText }}
           onClick={handleType}
         >
-          {type.charAt(0).toUpperCase() + type.substring(1)}
+          {`Toggle: ${type.charAt(0).toUpperCase() + type.substring(1)}`}
         </button>
         <input
           id="input"
           value={keyword}
           onChange={(e) => {
             const value = e.currentTarget.value;
-            console.log(value);
             setKeyword(value);
             setPage(1);
           }}
