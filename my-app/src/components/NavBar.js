@@ -8,7 +8,7 @@ function NavBar() {
         StreamSearch+
       </NavLink>
       <nav className="NavBar-NavLinks">
-        <NavLink to="./Netflix">
+        <NavLink to="./">
           <button id="netflix">
             <img
               src="https://www.justwatch.com/images/icon/207360008/s100"
