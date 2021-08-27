@@ -18,18 +18,20 @@ function url({ provider, type, pg, keyword }) {
 
 export function ResultsFetcher({ provider, type, pg, keyword, children }) {
   const [results, setResults] = useState([]);
+  const [totalPages, setTotalPages] = useState(1);
   useEffect(() => {
     fetch(url({ provider, type, pg, keyword }), FETCH_OPTIONS)
       .then((res) => res.json())
       .then((res) => {
         console.log(res.results);
         setResults(res.results);
+        setTotalPages(res.total_pages);
       });
   }, [provider, type, pg, keyword]);
 
   return (
     <div className={provider}>
-      <React.Fragment> {children({ results })}</React.Fragment>
+      <React.Fragment> {children({ results, totalPages })}</React.Fragment>
     </div>
   );
 }

@@ -1,14 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 
-export function Controls({ children, buttonColor, btnText }) {
-  const [type, setType] = useState("movie");
-  const [page, setPage] = useState(1);
-  const [keyword, setKeyword] = useState("");
-  function handleType() {
-    type === "movie" ? setType("series") : setType("movie");
-    setPage(1);
-  }
-
+export function Controls({
+  children,
+  buttonColor,
+  btnText,
+  totalPages,
+  page,
+  setPage,
+  keyword,
+  setKeyword,
+  type,
+  handleType,
+}) {
   return (
     <React.Fragment>
       <div className="Buttons">
@@ -27,11 +30,19 @@ export function Controls({ children, buttonColor, btnText }) {
         <button
           style={{ backgroundColor: buttonColor, color: btnText }}
           id="next"
-          onClick={() => setPage(page + 1)}
+          onClick={() => {
+            if (totalPages === page) {
+              return;
+            }
+
+            setPage(page + 1);
+          }}
         >
           Next
         </button>
-        <p id="page">Page: {page}</p>
+        <p id="page">
+          Page: {page} of {totalPages}
+        </p>
       </div>
       <div id="toggle">
         <button
@@ -53,7 +64,7 @@ export function Controls({ children, buttonColor, btnText }) {
           placeholder="Search by Name/Keyword"
         />
       </div>
-      {children({ keyword, page, type })}
+      {children}
       <div className="Buttons Buttons-bottom">
         <button
           style={{ backgroundColor: buttonColor, color: btnText }}
