@@ -9,7 +9,7 @@ function NavBar() {
       </NavLink>
       <nav className="NavBar-NavLinks">
         <NavLink to="./">
-          <button id="netflix">
+          <button id="netflix" onClick={()=>{console.log("yo")}}>
             <img
               src="https://www.justwatch.com/images/icon/207360008/s100"
               alt="Netflix"
